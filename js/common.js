@@ -1,0 +1,1 @@
+const commonIntervalTime = 10

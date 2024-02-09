@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="faq.css">
+
+        <script>
+            function afterLoad() {
+                var acc = document.getElementsByClassName("faqQuestionBox");
+                var i;
+                //console.log(acc[0])
+                for (i = 0; i < acc.length; i++) {
+                    //console.log(acc)
+                    acc[i].addEventListener("click", function() {
+                        //alert("a")
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                        } else {
+                        panel.style.display = "block";
+                        }
+                    });
+                }
+            }
+        </script>
+
+    </head>
+    
+
+    <body>
+
+
+        <div class="faqDivider">
+            <span>GENERAL QUESTIONS WHO WOULD HAVE GUESSED WHY WE CAN'T LIVE IN A SOCIETY</span>
+        </div>
+
+        <div class="faqQuestionBox">
+            <span>This is literally unplayable! How am I supposed to know the login code! What am I - a magician?</span>
+        </div>
+
+        <div class="faqAnswerBox">
+            <span>
+                Now there - there's no need to panic.<br>
+                In order to unlock the phone, you can use your <u>personalized second password</u>, that you can use to access the phone! Here are the steps, how to do it.<br>
+                <br>
+                <ol>
+                    <li>Find your <b>Login Code</b>. It's located in the top-right corner of the site.</li>
+                    <li>Enter the password backwards.</li>
+                    <li>In case of any letters, convert them using a T9-keyboard method.</li>
+                </ol>
+            </span>
+        </div>
+
+
+        <div class="faqDivider">
+            <span>GENERAL QUESTIONS WHO WOULD HAVE GUESSED WHY WE CAN'T LIVE IN A SOCIETY</span>
+        </div>
+        
+        <div class="faqQuestionBox">
+            <span>This is literally unplayable! How am I supposed to know the login code! What am I - a magician?</span>
+        </div>
+
+        <div class="faqAnswerBox">
+            <span>Idk, kill yourself or something lmao</span>
+        </div>
+
+
+
+        <div class="faqQuestionBox">
+            <span>This is literally unplayable! How am I supposed to know the login code! What am I - a magician?</span>
+        </div>
+
+        <div class="faqAnswerBox">
+            <span>Idk, kill yourself or something lmao</span>
+        </div>
+
+        
+    </body>
+    <script>afterLoad()</script>
+</html>

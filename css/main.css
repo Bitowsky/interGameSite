@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+.mainTop {
+    height: 100px;
+    outline: 1px dotted white;
+    padding: auto;
+}
+
+.mainLeft {
+    width: 25%;
+    float: left;
+    height: 600px;
+    outline: 1px dotted white;
+}
+
+.mainRight {
+    width: 75%;
+    float: left;
+    height: 600px;
+    outline: 1px dotted white;
+}
+
+.mainBottom {
+    height: 50px;
+    clear: both;
+    outline: 1px dotted white;
+}
+
+.mainTopWelcome {
+    text-align: right;
+    margin-right: 50px;
+    padding-top: 25px;
+}
+
+#mainTopWelcome1 {
+    font-size: 30px;
+}
+
+#mainTopWelcome2 {
+    opacity: 0.7;
+}
+
+.mainLeftBox {
+    font-size: 20px;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5%;
+    margin-top: 12.5px;
+    background: none;
+    outline: 1px dotted white;
+    text-align: center;
+}
+
+.mainLeftBox:hover {
+    background-color: white;
+    color: black;
+}
