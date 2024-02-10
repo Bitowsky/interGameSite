@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="test"></div>
+    <div id="timeCode"></div>
+    <br>
+    <progress id="timeCodeRefreshtimer" value="1" max="60000"></progress>
+    <br>
+    <div id="test2"></div>
+    <br>
+    <select name="" id="timeZones">
+        <option value="-1">-1</option>
+        <option value="0" selected>0</option>
+        <option value="1">1</option>
+    </select>
+    <br><br>
+    <input type="text" id="nickname" oninput="checkName(event)" maxlength="20">
+    <br><br>
+    Your account code: <div id="nickCode"></div>
+</body>
+</html>

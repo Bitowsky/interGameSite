@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <script>
+        localStorage.setItem("currView", "login");
+    </script>
+
     <meta charset="UTF-8">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Login to Happy Happy Hackers</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+    
 </head>
 <body>
-    <div id="test"></div>
-    <div id="timeCode"></div>
-    <br>
-    <progress id="timeCodeRefreshtimer" value="1" max="60000"></progress>
-    <br>
-    <div id="test2"></div>
-    <br>
-    <select name="" id="timeZones">
-        <option value="-1">-1</option>
-        <option value="0" selected>0</option>
-        <option value="1">1</option>
-    </select>
-    <br><br>
-    <input type="text" id="nickname" oninput="checkName(event)" maxlength="20">
-    <br><br>
-    Your account code: <div id="nickCode"></div>
+    <p class="textLogin">Welcome to Happy Happy Hackers!<br>Get your first system hacked!</p>
+    <p class="textLogin2">Enter your username to login!</p>
+    <div class="loginInputBox">
+        <input type="text" name="" class="loginInput" id="loginInput" maxlength="20" placeholder="(your username)">
+        <p class="loginInputDisc" id="loginInputDisc">Your username can created using only the Latin Alphabet (A-Z/a-z) and numbers (0-9)</p>
+    </div>
+    <div class="loginButtonBox"><button class="loginButton cur-point" id="loginButton">LOG IN</button></div>
+    <div class="loginDisc">DISLAIMER: This site does not send any data to any servers. It only stores data in your local storage. Not like you wanted to put your real password either way, right?</div>
 </body>
+<script rel="preload" src="./js/global.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/login.js"></script>
+<script>
+    document.onkeyup = function (e) {
+    if (e.keyCode == 13) {
+        login();
+    }}
+    document.getElementById('loginButton').addEventListener("click", function() {
+        login()
+    })
+    document.getElementById('loginButton').addEventListener("click", function() {
+        login()
+    })
+    document.getElementById('loginInput').addEventListener("keyup", function() {
+        terminaltypeSFX();
+        checkName(event)
+    })
+</script>
 </html>

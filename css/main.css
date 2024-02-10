@@ -1,0 +1,91 @@
+:root {
+    --ch: calc(100vh - 100px)
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.mainTop {
+    height: 100px;
+    outline: 1px dotted white;
+    padding: auto;
+}
+
+.mainLeft {
+    width: 25%;
+    float: left;
+    height: calc(var(--ch) - 20px);
+    outline: 1px dotted white;
+    overflow-y: scroll;
+    padding: 0 0 20px 0;
+}
+
+.mainRight {
+    width: 75%;
+    float: left;
+    height: var(--ch);
+    outline: 1px dotted white;
+    overflow: hidden;
+    position: relative;
+}
+
+.loadpage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+.mainBottom {
+    height: 50px;
+    clear: both;
+    outline: 1px dotted white;
+}
+
+.mainTopWelcome {
+    text-align: right;
+    margin-right: 50px;
+    padding-top: 25px;
+}
+
+#mainTopWelcome1 {
+    font-size: 30px;
+}
+
+#mainTopWelcome2 {
+    opacity: 0.7;
+}
+
+.mainLeftBox {
+    font-size: 20px;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5%;
+    margin-top: 12.5px;
+    background: none;
+    outline: 1px dotted white;
+    text-align: center;
+    transition: .4s;
+}
+
+.mainLeftBox:hover {
+    background-color: white;
+    color: black;
+}
+
+.welcomeText {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 48px;
+}
+
+.welcomeText2 {
+    margin-top: 100px;
+    font-size: 25px;
+    text-align: center;
+}

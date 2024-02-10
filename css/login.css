@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+
+.textLogin, .textLogin2 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 48px;
+}
+
+.textLogin2 {
+    font-size: 36px;
+    margin-top: 10%;
+}
+
+.loginInputBox {
+    text-align: center;
+    color: black;
+    height: 75px;
+}
+
+.loginInput {
+    width: 700px;
+    height: 75px;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    border: 2px dotted white;
+    background: none;
+}
+
+.loginButtonBox {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.loginButton {
+    width: 300px;
+    height: 50px;
+    font-size: 36px;
+    border: 2px dotted white;
+    background: none;
+}
+
+.loginButtonActive {
+    color: white;
+}
+
+.loginButtonActive:hover {
+    background-color: white;
+    color: black;
+}
+
+.loginInputDisc {
+    opacity: 0.6;
+}
+
+.loginDisc {
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    bottom: 25px;
+    opacity: 0.4;
+}
