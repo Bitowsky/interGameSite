@@ -31,12 +31,14 @@
     document.getElementById('loginButton').addEventListener("click", function() {
         login()
     })
-    document.getElementById('loginButton').addEventListener("click", function() {
-        login()
-    })
-    document.getElementById('loginInput').addEventListener("keyup", function() {
-        terminaltypeSFX();
+    document.getElementById('loginInput').onkeyup = function (e) {
+        if (e.keyCode == 13) {
+            login();
+        }
+        else {
+            terminaltypeSFX();
+        }
         checkName(event)
-    })
+    }
 </script>
 </html>
