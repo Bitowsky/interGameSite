@@ -2,10 +2,6 @@
 <html lang="en">
 <head>
 
-    <script>
-        localStorage.setItem("currView", "login");
-    </script>
-
     <meta charset="UTF-8">
     <title>Login to Happy Happy Hackers</title>
     <link rel="stylesheet" href="./css/global.css">
@@ -27,6 +23,7 @@
 <script src="./js/script.js"></script>
 <script src="./js/login.js"></script>
 <script>
+    localStorage.setItem("currView", "login");
     document.onkeyup = function (e) {
     if (e.keyCode == 13) {
         login();

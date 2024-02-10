@@ -1,14 +1,3 @@
-function readJSON(file) {
-    var request = new XMLHttpRequest();
-    request.open('GET', file, false);
-    request.send(null);
-    if (request.status == 200)
-        return request.responseText;
-}
-let GetData = readJSON('./js/data.json');
-let APIdata = JSON.parse(GetData)
-
-
 // LEFT BUTTONS PAGES FUNCTIONS
 function FaqFunc() {
     var acc = document.getElementsByClassName("faqQuestionBox");
@@ -77,7 +66,7 @@ for (let i = 0; i < APIdata.homepages.length; i++) {
         //get page function. Here you put your page function
         if (APIdata.homepages[i].codename == 'faq'){ FaqFunc() }
         
-        if (APIdata.homepages[i].codename == 'Tac'){ 
+        else if (APIdata.homepages[i].codename == 'Tac'){ 
             document.getElementById('currCode').addEventListener("click", function() {
                 currCodeCopy()
             })
