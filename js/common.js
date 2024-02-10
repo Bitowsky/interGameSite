@@ -1,1 +1,0 @@
-const commonIntervalTime = 10
